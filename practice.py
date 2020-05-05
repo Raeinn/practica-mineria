@@ -1,4 +1,5 @@
 import math as mt
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -20,8 +21,6 @@ def std_desv(lista, mean):
 
 # Funcion para mostrar el resumen de los 5 numeros, media y desviacion estandar
 # Se asume que la lista que se da como argumento esta ordenada
-# TODO: Ajustar funcion a dos funciones: Una mostrara minimo, maximo y los percentiles;
-# otra mostrara la media, mediana y desviacion estandar
 def five_num_summary(lista):
     mean = sum(lista) / len(lista)
     print('Minimo:', lista[0])
@@ -32,18 +31,25 @@ def five_num_summary(lista):
     print('Media:', mean)
     print('Desviacion estandar:', std_desv(lista, mean))
 
+# Funcion que muestra media, mediana y desviacion estandar
+def centre_summary(lista):
+    mean = sum(lista) / len(lista)
+    print('Media:', mean)
+    print('Mediana:', percentil(lista, 0.5))
+    print('Desviacion estandar:', std_desv(lista, mean))
+
 # Importar archivo de datos, modificar directorio de datos de ser necesario
 w_d = 'D:\\last_\\Documents\\Uni\\Octavo\\Mineria\\Python\\practica-mineria\\data\\'
 i_f = w_d+'survey_results_public.csv'
 data = pd.read_csv(i_f, encoding='utf-8')
 
 # Importar los datos como listas
-# Quitar comentario para activar la lista necesaria
+# Quitar comentarios para activar las listas necesarias
 #country = data['Country'].tolist()
 #edlevel = data['EdLevel'].tolist()
 devtype = data['DevType'].tolist()
 #yearscode = data['YearsCode'].tolist()
-salary = data['ConvertedComp'].tolist()
+#salary = data['ConvertedComp'].tolist()
 #workhrs = data['WorkWeekHrs'].tolist()
 #languages = data['LanguageWorkedWith'].tolist()
 #age = data['Age'].tolist()
@@ -162,12 +168,12 @@ five_num_summary(salary_w)
 plt.boxplot([salary_bi, salary_multi, salary_blk, salary_ea, salary_hisp, salary_me, salary_na,
 salary_sa, salary_w], labels=['BiR','MR','Afros','EA','Hisp','ME','NA','SA','Caucasic'])
 '''
-# Compute the five-number summary, the boxplot, the mean,
-# and the standard deviation for the annual salary per developer type.
+# 3. Compute the five-number summary, the boxplot, the mean, and the standard deviation
+# for the annual salary per developer type.
 # Found dev-types: Academic; Business; Learning; Database Administrator; Designer; back-end; desktop; front-end
 # embedded; full-stack; game; mobile; qa; devops; educator; engineer, data; reliability; engineering; Sales;
 # Product; Scientist; VP; Student; System
-
+'''
 salary_ar = []
 salary_ba = []
 salary_mls = []
@@ -334,9 +340,6 @@ five_num_summary(salary_pdm)
 print('**** Resumen: Salario por anio de cientificos ****')
 five_num_summary(salary_scien)
 
-print('**** Resumen: Salario por anio de cientificos ****')
-five_num_summary(salary_scien)
-
 print('**** Resumen: Salario por anio de VP ****')
 five_num_summary(salary_vp)
 
@@ -349,3 +352,47 @@ five_num_summary(salary_sysadm)
 plt.boxplot([salary_ar,salary_ba,salary_mls,salary_dba,salary_dsgn,salary_dbe,salary_ddk,salary_dfe,
 salary_demb,salary_dfs,salary_dg,salary_dm,salary_dqa,salary_dvop,salary_edu,salary_engdt,salary_engra,
 salary_engman,salary_sales,salary_pdm,salary_scien,salary_vp,salary_stud,salary_sysadm])
+'''
+# 4. Compute the median, mean and standard deviation of the annual salary per country.
+# Find all possible countries on the column
+'''
+all_countries = []
+for c in country:
+    if c not in all_countries and type(c) is str:
+        all_countries.append(c)
+
+for c in all_countries:
+    i = 0
+    salary_country = []
+    while(i < len(salary)):
+        if country[i] == c and not mt.isnan(salary[i]):
+            salary_country.append(salary[i])
+        i += 1
+    print('**** Resumen de estadistica para {} ****'.format(c))
+    if len(salary_country) > 1: centre_summary(salary_country)
+    else: print('No se cuenta con datos suficientes de este pais para su analisis.')
+'''
+# 5. Obtain a bar plot with the frequencies of responses for each developer type.
+# Place all dev types in a list
+dev_types = []
+for types in devtype:
+    if type(types) is str:
+        aux_str = types.split(sep=';')
+        for string in aux_str:
+            if string not in dev_types:
+                dev_types.append(string)
+
+freqs = []
+for types in dev_types:
+    cnt = 0
+    for elem in devtype:
+        if type(elem) is str:
+            cnt += elem.count(types)
+    freqs.append(cnt)
+
+x_ticks = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+'T', 'U', 'V', 'W', 'X')
+y_pos = np.arange(len(dev_types))
+plt.bar(y_pos, freqs)
+plt.xticks(y_pos, x_ticks)
+plt.show()
