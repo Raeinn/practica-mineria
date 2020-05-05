@@ -18,6 +18,20 @@ def std_desv(lista, mean):
     varianza = aux1 / (len(lista) - 1)
     return mt.sqrt(varianza)
 
+# Funcion para mostrar el resumen de los 5 numeros, media y desviacion estandar
+# Se asume que la lista que se da como argumento esta ordenada
+# TODO: Ajustar funcion a dos funciones: Una mostrara minimo, maximo y los percentiles;
+# otra mostrara la media, mediana y desviacion estandar
+def five_num_summary(lista):
+    mean = sum(lista) / len(lista)
+    print('Minimo:', lista[0])
+    print('Percentil 1:', percentil(lista, 0.25))
+    print('Mediana:', percentil(lista, 0.5))
+    print('Percentil 3:', percentil(lista, 0.75))
+    print('Maximo:', lista[-1])
+    print('Media:', mean)
+    print('Desviacion estandar:', std_desv(lista, mean))
+
 # Importar archivo de datos, modificar directorio de datos de ser necesario
 w_d = 'D:\\last_\\Documents\\Uni\\Octavo\\Mineria\\Python\\practica-mineria\\data\\'
 i_f = w_d+'survey_results_public.csv'
@@ -27,14 +41,14 @@ data = pd.read_csv(i_f, encoding='utf-8')
 # Quitar comentario para activar la lista necesaria
 #country = data['Country'].tolist()
 #edlevel = data['EdLevel'].tolist()
-#devtype = data['DevType'].tolist()
+devtype = data['DevType'].tolist()
 #yearscode = data['YearsCode'].tolist()
 salary = data['ConvertedComp'].tolist()
 #workhrs = data['WorkWeekHrs'].tolist()
 #languages = data['LanguageWorkedWith'].tolist()
 #age = data['Age'].tolist()
 #gender = data['Gender'].tolist()
-ethnicity = data['Ethnicity'].tolist()
+#ethnicity = data['Ethnicity'].tolist()
 
 # 1. Compute the five-number summary, the boxplot, the mean,
 # and the standard deviation for the annual salary per gender.
@@ -59,38 +73,14 @@ salary_m.sort()
 salary_w.sort()
 salary_nb.sort()
 
-mean = sum(salary_m)/len(salary_m)
-
 print('**** Resumen: Salario por anio de hombres ****')
-print('Minimo:', salary_m[0])
-print('Percentil 1:', percentil(salary_m, 0.25))
-print('Mediana:', percentil(salary_m, 0.5))
-print('Percentil 3:', percentil(salary_m, 0.75))
-print('Maximo:', salary_m[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_m, mean))
-
-mean = sum(salary_w)/len(salary_w)
+five_num_summary(salary_m)
 
 print('\n**** Resumen: Salario por anio de mujeres ****')
-print('Minimo:', salary_w[0])
-print('Percentil 1:', percentil(salary_w, 0.25))
-print('Mediana:', percentil(salary_w, 0.5))
-print('Percentil 3:', percentil(salary_w, 0.75))
-print('Maximo:', salary_w[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_w, mean))
-
-mean = sum(salary_nb)/len(salary_nb)
+five_num_summary(salary_w)
 
 print('\n**** Resumen: Salario por anio de personas no-binarias ****')
-print('Minimo:', salary_nb[0])
-print('Percentil 1:', percentil(salary_nb, 0.25))
-print('Mediana:', percentil(salary_nb, 0.5))
-print('Percentil 3:', percentil(salary_nb, 0.75))
-print('Maximo:', salary_nb[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_nb, mean))
+five_num_summary(salary_nb)
 
 plt.boxplot([salary_m, salary_w, salary_nb], labels=['Man','Woman','Non-binary'])
 '''
@@ -142,110 +132,220 @@ salary_na.sort()
 salary_sa.sort()
 salary_w.sort()
 
-mean = sum(salary_bi)/len(salary_bi)
-
 print('**** Resumen: Salario por anio de personas biraciales ****')
-print('Minimo:', salary_bi[0])
-print('Percentil 1:', percentil(salary_bi, 0.25))
-print('Mediana:', percentil(salary_bi, 0.5))
-print('Percentil 3:', percentil(salary_bi, 0.75))
-print('Maximo:', salary_bi[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_bi, mean))
-
-mean = sum(salary_multi)/len(salary_multi)
+five_num_summary(salary_bi)
 
 print('**** Resumen: Salario por anio de personas multiraciales ****')
-print('Minimo:', salary_multi[0])
-print('Percentil 1:', percentil(salary_multi, 0.25))
-print('Mediana:', percentil(salary_multi, 0.5))
-print('Percentil 3:', percentil(salary_multi, 0.75))
-print('Maximo:', salary_multi[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_multi, mean))
-
-mean = sum(salary_blk)/len(salary_blk)
+five_num_summary(salary_multi)
 
 print('**** Resumen: Salario por anio de personas afroamericanas ****')
-print('Minimo:', salary_blk[0])
-print('Percentil 1:', percentil(salary_blk, 0.25))
-print('Mediana:', percentil(salary_blk, 0.5))
-print('Percentil 3:', percentil(salary_blk, 0.75))
-print('Maximo:', salary_blk[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_blk, mean))
-
-mean = sum(salary_ea)/len(salary_ea)
+five_num_summary(salary_blk)
 
 print('**** Resumen: Salario por anio de personas del este asiatico ****')
-print('Minimo:', salary_ea[0])
-print('Percentil 1:', percentil(salary_ea, 0.25))
-print('Mediana:', percentil(salary_ea, 0.5))
-print('Percentil 3:', percentil(salary_ea, 0.75))
-print('Maximo:', salary_ea[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_ea, mean))
-
-mean = sum(salary_hisp)/len(salary_hisp)
+five_num_summary(salary_ea)
 
 print('**** Resumen: Salario por anio de personas hispanas ****')
-print('Minimo:', salary_hisp[0])
-print('Percentil 1:', percentil(salary_hisp, 0.25))
-print('Mediana:', percentil(salary_hisp, 0.5))
-print('Percentil 3:', percentil(salary_hisp, 0.75))
-print('Maximo:', salary_hisp[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_hisp, mean))
-
-mean = sum(salary_me)/len(salary_me)
+five_num_summary(salary_hisp)
 
 print('**** Resumen: Salario por anio de personas del medio este ****')
-print('Minimo:', salary_me[0])
-print('Percentil 1:', percentil(salary_me, 0.25))
-print('Mediana:', percentil(salary_me, 0.5))
-print('Percentil 3:', percentil(salary_me, 0.75))
-print('Maximo:', salary_me[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_me, mean))
-
-mean = sum(salary_na)/len(salary_na)
+five_num_summary(salary_me)
 
 print('**** Resumen: Salario por anio de personas nativo-americanas ****')
-print('Minimo:', salary_na[0])
-print('Percentil 1:', percentil(salary_na, 0.25))
-print('Mediana:', percentil(salary_na, 0.5))
-print('Percentil 3:', percentil(salary_na, 0.75))
-print('Maximo:', salary_na[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_na, mean))
-
-mean = sum(salary_sa)/len(salary_sa)
+five_num_summary(salary_na)
 
 print('**** Resumen: Salario por anio de personas del sur asiatico ****')
-print('Minimo:', salary_sa[0])
-print('Percentil 1:', percentil(salary_sa, 0.25))
-print('Mediana:', percentil(salary_sa, 0.5))
-print('Percentil 3:', percentil(salary_sa, 0.75))
-print('Maximo:', salary_sa[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_sa, mean))
-
-mean = sum(salary_w)/len(salary_w)
+five_num_summary(salary_sa)
 
 print('**** Resumen: Salario por anio de personas caucasicas ****')
-print('Minimo:', salary_w[0])
-print('Percentil 1:', percentil(salary_w, 0.25))
-print('Mediana:', percentil(salary_w, 0.5))
-print('Percentil 3:', percentil(salary_w, 0.75))
-print('Maximo:', salary_w[-1])
-print('Media:', mean)
-print('Desviacion estandar:', std_desv(salary_w, mean))
+five_num_summary(salary_w)
 
 plt.boxplot([salary_bi, salary_multi, salary_blk, salary_ea, salary_hisp, salary_me, salary_na,
 salary_sa, salary_w], labels=['BiR','MR','Afros','EA','Hisp','ME','NA','SA','Caucasic'])
 '''
 # Compute the five-number summary, the boxplot, the mean,
 # and the standard deviation for the annual salary per developer type.
-# Found dev-types: Academic; Business; Learning; Database Administrator; Designer; back-end; desktop;
-# embedded,; full-stack; game; mobile; qa; devops; educator; engineer, data; reliability; engineering; Sales;
+# Found dev-types: Academic; Business; Learning; Database Administrator; Designer; back-end; desktop; front-end
+# embedded; full-stack; game; mobile; qa; devops; educator; engineer, data; reliability; engineering; Sales;
 # Product; Scientist; VP; Student; System
+
+salary_ar = []
+salary_ba = []
+salary_mls = []
+salary_dba = []
+salary_dsgn = []
+salary_dbe = []
+salary_ddk = []
+salary_dfe = []
+salary_demb = []
+salary_dfs = []
+salary_dg = []
+salary_dm = []
+salary_dqa = []
+salary_dvop = []
+salary_edu = []
+salary_engdt = []
+salary_engra = []
+salary_engman = []
+salary_sales = []
+salary_pdm = []
+salary_scien = []
+salary_vp = []
+salary_stud = []
+salary_sysadm = []
+
+i = 0
+while(i < len(salary)):
+    if not mt.isnan(salary[i]) and type(devtype[i]) is str:
+        if devtype[i].lower().count('academic') > 0:
+            salary_ar.append(salary[i])
+        if devtype[i].lower().count('business') > 0:
+            salary_ba.append(salary[i])
+        if devtype[i].lower().count('learning') > 0:
+            salary_mls.append(salary[i])
+        if devtype[i].lower().count('database administrator') > 0:
+            salary_dba.append(salary[i])
+        if devtype[i].lower().count('designer') > 0:
+            salary_dsgn.append(salary[i])
+        if devtype[i].lower().count('back-end') > 0:
+            salary_dbe.append(salary[i])
+        if devtype[i].lower().count('desktop') > 0:
+            salary_ddk.append(salary[i])
+        if devtype[i].lower().count('front-end') > 0:
+            salary_dfe.append(salary[i])
+        if devtype[i].lower().count('embedded') > 0:
+            salary_demb.append(salary[i])
+        if devtype[i].lower().count('full-stack') > 0:
+            salary_dfs.append(salary[i])
+        if devtype[i].lower().count('game') > 0:
+            salary_dg.append(salary[i])
+        if devtype[i].lower().count('mobile') > 0:
+            salary_dm.append(salary[i])
+        if devtype[i].lower().count('qa') > 0:
+            salary_dqa.append(salary[i])
+        if devtype[i].lower().count('devops') > 0:
+            salary_dvop.append(salary[i])
+        if devtype[i].lower().count('educator') > 0:
+            salary_edu.append(salary[i])
+        if devtype[i].lower().count('engineer, data') > 0:
+            salary_engdt.append(salary[i])
+        if devtype[i].lower().count('reliability') > 0:
+            salary_engra.append(salary[i])
+        if devtype[i].lower().count('engineering') > 0:
+            salary_engman.append(salary[i])
+        if devtype[i].lower().count('sales') > 0:
+            salary_sales.append(salary[i])
+        if devtype[i].lower().count('product') > 0:
+            salary_pdm.append(salary[i])
+        if devtype[i].lower().count('scientist') > 0:
+            salary_scien.append(salary[i])
+        if devtype[i].lower().count('vp') > 0:
+            salary_vp.append(salary[i])
+        if devtype[i].lower().count('student') > 0:
+            salary_stud.append(salary[i])
+        if devtype[i].lower().count('system') > 0:
+            salary_sysadm.append(salary[i])
+    i += 1
+
+salary_ar.sort()
+salary_ba.sort()
+salary_mls.sort()
+salary_dba.sort()
+salary_dsgn.sort()
+salary_dbe.sort()
+salary_ddk.sort()
+salary_dfe.sort()
+salary_demb.sort()
+salary_dfs.sort()
+salary_dg.sort()
+salary_dm.sort()
+salary_dqa.sort()
+salary_dvop.sort()
+salary_edu.sort()
+salary_engdt.sort()
+salary_engra.sort()
+salary_engman.sort()
+salary_sales.sort()
+salary_pdm.sort()
+salary_scien.sort()
+salary_vp.sort()
+salary_stud.sort()
+salary_sysadm.sort()
+
+print('**** Resumen: Salario por anio de investigadores academicos ****')
+five_num_summary(salary_ar)
+
+print('**** Resumen: Salario por anio de analistas de negocios ****')
+five_num_summary(salary_ba)
+
+print('**** Resumen: Salario por anio de cientificos de machine learning ****')
+five_num_summary(salary_mls)
+
+print('**** Resumen: Salario por anio de administradores de database ****')
+five_num_summary(salary_dba)
+
+print('**** Resumen: Salario por anio de diseniadores ****')
+five_num_summary(salary_dsgn)
+
+print('**** Resumen: Salario por anio de desarrolladores back-end ****')
+five_num_summary(salary_dbe)
+
+print('**** Resumen: Salario por anio de desarrolladores de escritorio ****')
+five_num_summary(salary_ddk)
+
+print('**** Resumen: Salario por anio de desarrolladores front-end ****')
+five_num_summary(salary_dfe)
+
+print('**** Resumen: Salario por anio de desarrolladores de aplicaciones integradas ****')
+five_num_summary(salary_demb)
+
+print('**** Resumen: Salario por anio de desarrolladores full-stack ****')
+five_num_summary(salary_dfs)
+
+print('**** Resumen: Salario por anio de desarrolladores de juegos ****')
+five_num_summary(salary_dg)
+
+print('**** Resumen: Salario por anio de desarrolladores de apps moviles ****')
+five_num_summary(salary_dm)
+
+print('**** Resumen: Salario por anio de desarrolladores QA ****')
+five_num_summary(salary_dqa)
+
+print('**** Resumen: Salario por anio de DevOps ****')
+five_num_summary(salary_dvop)
+
+print('**** Resumen: Salario por anio de educadores ****')
+five_num_summary(salary_edu)
+
+print('**** Resumen: Salario por anio de ingenieros en datos ****')
+five_num_summary(salary_engdt)
+
+print('**** Resumen: Salario por anio de ingenieros en fiabilidad ****')
+five_num_summary(salary_engra)
+
+print('**** Resumen: Salario por anio de gerentes de ingenieria ****')
+five_num_summary(salary_engman)
+
+print('**** Resumen: Salario por anio de encargados de ventas ****')
+five_num_summary(salary_sales)
+
+print('**** Resumen: Salario por anio de gerentes de productos ****')
+five_num_summary(salary_pdm)
+
+print('**** Resumen: Salario por anio de cientificos ****')
+five_num_summary(salary_scien)
+
+print('**** Resumen: Salario por anio de cientificos ****')
+five_num_summary(salary_scien)
+
+print('**** Resumen: Salario por anio de VP ****')
+five_num_summary(salary_vp)
+
+print('**** Resumen: Salario por anio de estudiantes ****')
+five_num_summary(salary_stud)
+
+print('**** Resumen: Salario por anio de administradores de sistemas ****')
+five_num_summary(salary_sysadm)
+
+plt.boxplot([salary_ar,salary_ba,salary_mls,salary_dba,salary_dsgn,salary_dbe,salary_ddk,salary_dfe,
+salary_demb,salary_dfs,salary_dg,salary_dm,salary_dqa,salary_dvop,salary_edu,salary_engdt,salary_engra,
+salary_engman,salary_sales,salary_pdm,salary_scien,salary_vp,salary_stud,salary_sysadm])
