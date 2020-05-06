@@ -38,6 +38,19 @@ def centre_summary(lista):
     print('Mediana:', percentil(lista, 0.5))
     print('Desviacion estandar:', std_desv(lista, mean))
 
+# Funcion para conseguir una lista de strings individuales
+# Necesaria para encontrar tipos de desarrolladores, o lenguajes de programacion
+def str_splitter(lista):
+    output = []
+    for elem in lista:
+        if type(elem) is str:
+            aux_str = elem.split(sep=';')
+            for string in aux_str:
+                if string not in output:
+                    output.append(string)
+    return output
+
+
 # Importar archivo de datos, modificar directorio de datos de ser necesario
 w_d = 'D:\\last_\\Documents\\Uni\\Octavo\\Mineria\\Python\\practica-mineria\\data\\'
 i_f = w_d+'survey_results_public.csv'
@@ -47,14 +60,17 @@ data = pd.read_csv(i_f, encoding='utf-8')
 # Quitar comentarios para activar las listas necesarias
 #country = data['Country'].tolist()
 #edlevel = data['EdLevel'].tolist()
-devtype = data['DevType'].tolist()
+#devtype = data['DevType'].tolist()
 #yearscode = data['YearsCode'].tolist()
 #salary = data['ConvertedComp'].tolist()
 #workhrs = data['WorkWeekHrs'].tolist()
-#languages = data['LanguageWorkedWith'].tolist()
-#age = data['Age'].tolist()
+languages = data['LanguageWorkedWith'].tolist()
+age = data['Age'].tolist()
 #gender = data['Gender'].tolist()
 #ethnicity = data['Ethnicity'].tolist()
+
+# A continuacion estan los ejercicios
+# Retire el grupo de comentarios necesario para probar la seccion especifica
 
 # 1. Compute the five-number summary, the boxplot, the mean,
 # and the standard deviation for the annual salary per gender.
@@ -374,13 +390,8 @@ for c in all_countries:
 '''
 # 5. Obtain a bar plot with the frequencies of responses for each developer type.
 # Place all dev types in a list
-dev_types = []
-for types in devtype:
-    if type(types) is str:
-        aux_str = types.split(sep=';')
-        for string in aux_str:
-            if string not in dev_types:
-                dev_types.append(string)
+'''
+dev_types = str_splitter(devtype)
 
 freqs = []
 for types in dev_types:
@@ -396,3 +407,83 @@ y_pos = np.arange(len(dev_types))
 plt.bar(y_pos, freqs)
 plt.xticks(y_pos, x_ticks)
 plt.show()
+'''
+# 6. Plot histograms with 10 bins for the years of experience with coding per gender.
+# Make a list with all genders (3)
+# For simple coding, "less than 1 year" will be "0", and "more than 50 years" shall be "51"
+'''
+all_genders = ['Man', 'Woman', 'Non-binary']
+
+for genders in all_genders:
+    years_gender = []
+    i = 0
+    while(i < len(yearscode)):
+        if type(gender[i]) is str and type(yearscode[i]) is str:
+            if gender[i].count(genders) > 0:
+                if yearscode[i] == 'Less than 1 year':
+                    years_gender.append(0)
+                elif yearscode[i] == 'More than 50 years':
+                    years_gender.append(51)
+                else:
+                    years_gender.append(int(yearscode[i]))
+        i += 1
+    years_gender.sort()
+    print('**** Histograma para {} ****'.format(genders))
+    plt.hist(years_gender, bins=10)
+    plt.show()
+'''
+# 7. Plot histograms with 10 bins for the average number
+# of working hours per week, per developer type.
+# For simple coding, any worker over 500 hours shall be treated as if they worked only 500 hrs
+'''
+dev_types = str_splitter(devtype)
+
+for types in dev_types:
+    workhrs_devtype = []
+    i = 0
+    while(i < len(workhrs)):
+        if type(devtype[i]) is str and not mt.isnan(workhrs[i]):
+            if workhrs[i] < 500:
+                workhrs_devtype.append(workhrs[i])
+            else:
+                workhrs_devtype.append(500)
+        i += 1
+    workhrs_devtype.sort()
+    print('**** Histograma para {} ****'.format(types))
+    plt.hist(workhrs_devtype, bins=10)
+    plt.show()
+'''
+# 8. Plot histograms with 10 bins for the age per gender.
+'''
+all_genders = ['Man', 'Woman', 'Non-binary']
+
+for genders in all_genders:
+    age_gender = []
+    i = 0
+    while(i < len(age)):
+        if type(gender[i]) is str and not mt.isnan(age[i]):
+            if gender[i].count(genders) > 0:
+                age_gender.append(age[i])
+        i += 1
+    age_gender.sort()
+    print('**** Histograma para {} ****'.format(genders))
+    plt.hist(age_gender, bins=10)
+    plt.show()
+'''
+# 9. Compute the median, mean and standard deviation of the age per programming language.
+# First, list all dev languages
+'''
+dev_lang = str_splitter(languages)
+
+for lang in dev_lang:
+    i = 0
+    age_lang = []
+    while(i < len(age)):
+        if type(languages[i]) is str and not mt.isnan(age[i]):
+            if languages[i].count(lang) > 0:
+                age_lang.append(age[i])
+        i += 1
+    print('**** Resumen de estadistica para {} ****'.format(lang))
+    if len(age_lang) > 1: centre_summary(age_lang)
+    else: print('No se cuenta con datos suficientes de este lenguaje para su analisis.')
+'''
