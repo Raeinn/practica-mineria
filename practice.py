@@ -22,21 +22,21 @@ def std_desv(lista, mean):
 # Funcion para mostrar el resumen de los 5 numeros, media y desviacion estandar
 # Se asume que la lista que se da como argumento esta ordenada
 def five_num_summary(lista):
-    mean = sum(lista) / len(lista)
+    media = np.mean(lista)
     print('Minimo:', lista[0])
     print('Percentil 1:', percentil(lista, 0.25))
     print('Mediana:', percentil(lista, 0.5))
     print('Percentil 3:', percentil(lista, 0.75))
     print('Maximo:', lista[-1])
-    print('Media:', mean)
-    print('Desviacion estandar:', std_desv(lista, mean))
+    print('Media:', media)
+    print('Desviacion estandar:', std_desv(lista, media))
 
 # Funcion que muestra media, mediana y desviacion estandar
 def centre_summary(lista):
-    mean = sum(lista) / len(lista)
-    print('Media:', mean)
+    media = np.mean(lista)
+    print('Media:', media)
     print('Mediana:', percentil(lista, 0.5))
-    print('Desviacion estandar:', std_desv(lista, mean))
+    print('Desviacion estandar:', std_desv(lista, media))
 
 # Funcion para conseguir una lista de strings individuales
 # Necesaria para encontrar tipos de desarrolladores, o lenguajes de programacion
@@ -50,6 +50,20 @@ def str_splitter(lista):
                     output.append(string)
     return output
 
+# Funcion para encontrar la correlacion de Pearson
+def correlacion(lista1, lista2):
+    m_1 = np.mean(lista1)
+    m_2 = np.mean(lista2)
+    s1 = 0
+    s2 = 0
+    s3 = 0
+    for i in range(len(lista1)):
+        aux1 = lista1[i] - m_1
+        aux2 = lista2[i] - m_2
+        s1 += aux1 * aux2
+        s2 += mt.pow(aux1, 2)
+        s3 += mt.pow(aux2, 2)
+    return s1 / (mt.sqrt(s2) * mt.sqrt(s3))
 
 # Importar archivo de datos, modificar directorio de datos de ser necesario
 w_d = 'D:\\last_\\Documents\\Uni\\Octavo\\Mineria\\Python\\practica-mineria\\data\\'
@@ -249,4 +263,89 @@ for lang in dev_lang:
     print('**** Resumen de estadistica para {} ****'.format(lang))
     if len(age_lang) > 1: centre_summary(age_lang)
     else: print('No se cuenta con datos suficientes de este lenguaje para su analisis.')
+'''
+# 10. Compute the correlation between years of experience and annual salary.
+# For simple coding, "less than 1 year" will be "0", and "more than 50 years" shall be "51"
+# First, clean all NaN from both tables and crop them to the same length
+'''
+i = 0
+while(i < len(salary)):
+    if yearscode[i] == 'Less than 1 year':
+        yearscode[i] = 0
+    elif yearscode[i] == 'More than 50 years':
+        yearscode[i] = 51
+    elif type(yearscode[i]) is str:
+        yearscode[i] = int(yearscode[i])
+    if mt.isnan(salary[i]) or mt.isnan(yearscode[i]):
+        del(yearscode[i])
+        del(salary[i])
+        continue
+    i += 1
+
+print('La correlacion entre el salario y los anios de experiencia es:', correlacion(yearscode, salary))
+'''
+# 11. Compute the correlation between the age and the annual salary.
+'''
+i = 0
+while(i < len(salary)):
+    if mt.isnan(salary[i]) or mt.isnan(age[i]):
+        del(age[i])
+        del(salary[i])
+        continue
+    i += 1
+
+print('La correlacion entre el salario y la edad es:', correlacion(age, salary))
+'''
+# 12. Compute the correlation between educational level and annual salary.
+# In this case, replace the string of the educational level by an ordinal index
+# (e.g. Primary/elementary school=1, Secondary school=2, and so on).
+'''
+i = 0
+while(i < len(salary)):
+    if type(edlevel[i]) is str:
+        if edlevel[i].count('never') > 0:
+            edlevel[i] = 0
+        elif edlevel[i].count('Primary') > 0:
+            edlevel[i] = 1
+        elif edlevel[i].count('Secondary') > 0:
+            edlevel[i] = 2
+        elif edlevel[i].count('university') > 0:
+            edlevel[i] = 3
+        elif edlevel[i].count('Professional') > 0:
+            edlevel[i] = 4
+        elif edlevel[i].count('Associate') > 0:
+            edlevel[i] = 5
+        elif edlevel[i].count('Bachelor') > 0:
+            edlevel[i] = 6
+        elif edlevel[i].count('Master') > 0:
+            edlevel[i] = 7
+        elif edlevel[i].count('Other') > 0:
+            edlevel[i] = 8
+    if mt.isnan(salary[i]) or mt.isnan(edlevel[i]):
+        del(edlevel[i])
+        del(salary[i])
+        continue
+    i += 1
+
+print('La correlacion entre el salario y el nivel educativo es:', correlacion(edlevel, salary))
+'''
+# 13. Obtain a bar plot with the frequencies of the different programming languages.
+'''
+dev_lang = str_splitter(languages)
+
+freqs = []
+for langs in dev_lang:
+    cnt = 0
+    for elem in languages:
+        if type(elem) is str:
+            if elem.count(langs) > 0:
+                cnt += 1
+    freqs.append(cnt)
+
+x_ticks = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'AA', 'AB')
+y_pos = np.arange(len(dev_lang))
+plt.bar(y_pos, freqs)
+plt.xticks(y_pos, x_ticks)
+plt.show()
 '''
