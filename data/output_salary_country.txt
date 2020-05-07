@@ -1,0 +1,819 @@
+**** Resumen de estadistica para United Kingdom ****
+Media: 166182.49950421418
+Mediana: 403336.0
+Desviacion estandar: 243496.79072127878
+
+**** Resumen de estadistica para Bosnia and Herzegovina ****
+Media: 24996.283333333333
+Mediana: 11604.0
+Desviacion estandar: 20860.18455651629
+
+**** Resumen de estadistica para Thailand ****
+Media: 48379.436893203885
+Mediana: 21084.0
+Desviacion estandar: 51809.0250268119
+
+**** Resumen de estadistica para United States ****
+Media: 249546.25458914627
+Mediana: 140000.0
+Desviacion estandar: 452103.49653113005
+
+**** Resumen de estadistica para Ukraine ****
+Media: 32698.136531365315
+Mediana: 79738.0
+Desviacion estandar: 50158.77885286782
+
+**** Resumen de estadistica para Canada ****
+Media: 134018.56490917146
+Mediana: 129775.0
+Desviacion estandar: 229255.56785028483
+
+**** Resumen de estadistica para India ****
+Media: 28057.664916229056
+Mediana: 181906.0
+Desviacion estandar: 85630.00357658784
+
+**** Resumen de estadistica para New Zealand ****
+Media: 151681.80392156861
+Mediana: 62073.0
+Desviacion estandar: 256560.9153522141
+
+**** Resumen de estadistica para Antigua and Barbuda ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Germany ****
+Media: 109256.8840656432
+Mediana: 40674.0
+Desviacion estandar: 187384.59566574875
+
+**** Resumen de estadistica para Australia ****
+Media: 171541.11627906977
+Mediana: 1000000.0
+Desviacion estandar: 264157.6881389503
+
+**** Resumen de estadistica para Russian Federation ****
+Media: 31124.38336347197
+Mediana: 27456.0
+Desviacion estandar: 81567.48057247244
+
+**** Resumen de estadistica para Brazil ****
+Media: 32623.57
+Mediana: 25461.5
+Desviacion estandar: 81082.44200704862
+
+**** Resumen de estadistica para Lithuania ****
+Media: 41625.13043478261
+Mediana: 26124.0
+Desviacion estandar: 51020.7100368481
+
+**** Resumen de estadistica para Israel ****
+Media: 94944.37651122625
+Mediana: 115464.0
+Desviacion estandar: 81949.01116788624
+
+**** Resumen de estadistica para South Africa ****
+Media: 63550.602870813396
+Mediana: 36930.0
+Desviacion estandar: 122848.78350800167
+
+**** Resumen de estadistica para Colombia ****
+Media: 24502.876190476192
+Mediana: 86832.0
+Desviacion estandar: 34218.77075208341
+
+**** Resumen de estadistica para Turkey ****
+Media: 25133.222664015906
+Mediana: 18432.0
+Desviacion estandar: 56946.03646818957
+
+**** Resumen de estadistica para Switzerland ****
+Media: 172675.60267857142
+Mediana: 70324.5
+Desviacion estandar: 260551.51606944785
+
+**** Resumen de estadistica para Argentina ****
+Media: 29467.26530612245
+Mediana: 18084.0
+Desviacion estandar: 46412.57682565098
+
+**** Resumen de estadistica para Sri Lanka ****
+Media: 13568.012121212121
+Mediana: 6000.0
+Desviacion estandar: 31039.208336920896
+
+**** Resumen de estadistica para Czech Republic ****
+Media: 42486.64182194617
+Mediana: 13896.0
+Desviacion estandar: 48860.859931895444
+
+**** Resumen de estadistica para Denmark ****
+Media: 113769.55476190476
+Mediana: 555242.0
+Desviacion estandar: 157030.59445994356
+
+**** Resumen de estadistica para Malaysia ****
+Media: 22988.0
+Mediana: 40424.5
+Desviacion estandar: 39565.3992491041
+
+**** Resumen de estadistica para Bangladesh ****
+Media: 21249.652
+Mediana: 11466.0
+Desviacion estandar: 84265.52561787964
+
+**** Resumen de estadistica para Spain ****
+Media: 88724.35726210351
+Mediana: 42679.0
+Desviacion estandar: 150175.53751392598
+
+**** Resumen de estadistica para Serbia ****
+Media: 34142.277272727275
+Mediana: 157000.0
+Desviacion estandar: 50960.274927937615
+
+**** Resumen de estadistica para Poland ****
+Media: 38860.441332324
+Mediana: 14424.0
+Desviacion estandar: 39190.57064673136
+
+**** Resumen de estadistica para Sweden ****
+Media: 76865.63616317531
+Mediana: 52692.0
+Desviacion estandar: 106229.86313640856
+
+**** Resumen de estadistica para China ****
+Media: 57430.42105263158
+Mediana: 10140.0
+Desviacion estandar: 127209.06104404744
+
+**** Resumen de estadistica para France ****
+Media: 81214.77972238987
+Mediana: 52848.0
+Desviacion estandar: 135682.6481262206
+
+**** Resumen de estadistica para Netherlands ****
+Media: 100845.07262103505
+Mediana: 33229.0
+Desviacion estandar: 172042.34842988633
+
+**** Resumen de estadistica para Italy ****
+Media: 89535.84388185653
+Mediana: 30364.5
+Desviacion estandar: 156187.42725451794
+
+**** Resumen de estadistica para Philippines ****
+Media: 16302.58552631579
+Mediana: 9750.0
+Desviacion estandar: 21292.47001540393
+
+**** Resumen de estadistica para Ireland ****
+Media: 250342.2390670554
+Mediana: 82494.0
+Desviacion estandar: 327004.1527287879
+
+**** Resumen de estadistica para Pakistan ****
+Media: 12115.1990521327
+Mediana: 6864.0
+Desviacion estandar: 47247.7943139437
+
+**** Resumen de estadistica para Azerbaijan ****
+Media: 15785.75
+Mediana: 9870.0
+Desviacion estandar: 8556.099442731662
+
+**** Resumen de estadistica para Austria ****
+Media: 83955.6396039604
+Mediana: 145060.0
+Desviacion estandar: 149323.02385778475
+
+**** Resumen de estadistica para Estonia ****
+Media: 41402.86524822695
+Mediana: 68745.0
+Desviacion estandar: 20123.355248218373
+
+**** Resumen de estadistica para Croatia ****
+Media: 45305.66071428572
+Mediana: 18546.0
+Desviacion estandar: 93815.65694417022
+
+**** Resumen de estadistica para South Korea ****
+Media: 79716.1
+Mediana: 511170.0
+Desviacion estandar: 150265.38116907838
+
+**** Resumen de estadistica para Greece ****
+Media: 46033.76298701299
+Mediana: 28643.5
+Desviacion estandar: 104307.87706957344
+
+**** Resumen de estadistica para Japan ****
+Media: 88246.28846153847
+Mediana: 378102.0
+Desviacion estandar: 145645.256852646
+
+**** Resumen de estadistica para Romania ****
+Media: 45733.03614457831
+Mediana: 31812.0
+Desviacion estandar: 83073.14943813771
+
+**** Resumen de estadistica para Finland ****
+Media: 72175.56806282722
+Mediana: 41724.0
+Desviacion estandar: 106391.64880574774
+
+**** Resumen de estadistica para Bulgaria ****
+Media: 42642.41935483871
+Mediana: 56160.0
+Desviacion estandar: 85792.13397903641
+
+**** Resumen de estadistica para Viet Nam ****
+Media: 17233.436781609194
+Mediana: 9312.0
+Desviacion estandar: 19921.575977690885
+
+**** Resumen de estadistica para Slovenia ****
+Media: 55717.80392156863
+Mediana: 70807.5
+Desviacion estandar: 100878.91513643584
+
+**** Resumen de estadistica para Iran ****
+Media: 16981.245238095238
+Mediana: 25650.0
+Desviacion estandar: 51585.26098788221
+
+**** Resumen de estadistica para Belarus ****
+Media: 29442.33064516129
+Mediana: 35400.0
+Desviacion estandar: 24806.577263050047
+
+**** Resumen de estadistica para Hungary ****
+Media: 33823.55319148936
+Mediana: 34212.0
+Desviacion estandar: 50130.7598626478
+
+**** Resumen de estadistica para Latvia ****
+Media: 40390.41836734694
+Mediana: 9624.0
+Desviacion estandar: 33244.48168886543
+
+**** Resumen de estadistica para Hong Kong (S.A.R.) ****
+Media: 111738.33333333333
+Mediana: 36352.5
+Desviacion estandar: 235675.38049249124
+
+**** Resumen de estadistica para United Arab Emirates ****
+Media: 53545.65909090909
+Mediana: 58812.0
+Desviacion estandar: 39709.35064781281
+
+**** Resumen de estadistica para Portugal ****
+Media: 50631.606741573036
+Mediana: 392190.0
+Desviacion estandar: 105347.4715320411
+
+**** Resumen de estadistica para Nigeria ****
+Media: 16828.869346733667
+Mediana: 3588.0
+Desviacion estandar: 74709.76693733777
+
+**** Resumen de estadistica para Norway ****
+Media: 182298.94019138755
+Mediana: 69319.5
+Desviacion estandar: 270245.26776651514
+
+**** Resumen de estadistica para Nicaragua ****
+Media: 33064.72727272727
+Mediana: 15204.0
+Desviacion estandar: 57902.976933242404
+
+**** Resumen de estadistica para Zimbabwe ****
+Media: 34046.666666666664
+Mediana: 900.0
+Desviacion estandar: 44166.96998997371
+
+**** Resumen de estadistica para Egypt ****
+Media: 13923.026490066226
+Mediana: 6804.0
+Desviacion estandar: 22411.803460363473
+
+**** Resumen de estadistica para Mexico ****
+Media: 30372.46220302376
+Mediana: 16332.0
+Desviacion estandar: 100183.20064810064
+
+**** Resumen de estadistica para Dominican Republic ****
+Media: 27355.147058823528
+Mediana: 149778.0
+Desviacion estandar: 37375.34052328865
+
+**** Resumen de estadistica para Guatemala ****
+Media: 23677.627906976744
+Mediana: 14664.0
+Desviacion estandar: 14253.467070327728
+
+**** Resumen de estadistica para Chile ****
+Media: 40438.90972222222
+Mediana: 21102.0
+Desviacion estandar: 55222.45405312169
+
+**** Resumen de estadistica para Ecuador ****
+Media: 26596.10714285714
+Mediana: 21900.0
+Desviacion estandar: 22395.17572861585
+
+**** Resumen de estadistica para Ghana ****
+Media: 16520.18181818182
+Mediana: 68172.0
+Desviacion estandar: 28956.9672374527
+
+**** Resumen de estadistica para Uganda ****
+Media: 37974.35294117647
+Mediana: 9804.0
+Desviacion estandar: 170187.09192406054
+
+**** Resumen de estadistica para Cambodia ****
+Media: 31957.0
+Mediana: 5908.0
+Desviacion estandar: 51256.23678288192
+
+**** Resumen de estadistica para Mauritius ****
+Media: 16521.666666666668
+Mediana: 23004.0
+Desviacion estandar: 6808.810423337719
+
+**** Resumen de estadistica para Nepal ****
+Media: 10434.987951807228
+Mediana: 1056.0
+Desviacion estandar: 34152.36635321545
+
+**** Resumen de estadistica para Singapore ****
+Media: 120621.5064102564
+Mediana: 27324.0
+Desviacion estandar: 236636.32603244888
+
+**** Resumen de estadistica para Sierra Leone ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Republic of Moldova ****
+Media: 20656.645161290322
+Mediana: 41202.0
+Desviacion estandar: 13747.78449435493
+
+**** Resumen de estadistica para Belgium ****
+Media: 73185.56465517242
+Mediana: 40560.5
+Desviacion estandar: 112377.45718099631
+
+**** Resumen de estadistica para Armenia ****
+Media: 24691.733333333334
+Mediana: 18456.0
+Desviacion estandar: 18425.851590533435
+
+**** Resumen de estadistica para Afghanistan ****
+Media: 101953.33333333333
+Mediana: 558.0
+Desviacion estandar: 285995.24179809616
+
+**** Resumen de estadistica para Bahrain ****
+Media: 23934.0
+Mediana: 14610.0
+Desviacion estandar: 20915.130790889165
+
+**** Resumen de estadistica para Mongolia ****
+Media: 8745.5
+Mediana: 8316.0
+Desviacion estandar: 5167.471233054369
+
+**** Resumen de estadistica para Georgia ****
+Media: 42008.204081632655
+Mediana: 22572.0
+Desviacion estandar: 146793.66959343813
+
+**** Resumen de estadistica para Cyprus ****
+Media: 55789.2972972973
+Mediana: 22915.0
+Desviacion estandar: 67256.68268113042
+
+**** Resumen de estadistica para Kenya ****
+Media: 24360.69
+Mediana: 34800.0
+Desviacion estandar: 76747.30583705429
+
+**** Resumen de estadistica para Luxembourg ****
+Media: 144603.63636363635
+Mediana: 80204.0
+Desviacion estandar: 228534.48552553912
+
+**** Resumen de estadistica para Saudi Arabia ****
+Media: 46463.4081632653
+Mediana: 22392.0
+Desviacion estandar: 30311.406626272976
+
+**** Resumen de estadistica para Cape Verde ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Peru ****
+Media: 48012.62962962963
+Mediana: 46920.0
+Desviacion estandar: 221572.9256880477
+
+**** Resumen de estadistica para Burundi ****
+Media: 3606.0
+Mediana: 3606.0
+Desviacion estandar: 941.8662325404813
+
+**** Resumen de estadistica para Iraq ****
+Media: 17226.0
+Mediana: 6984.0
+Desviacion estandar: 19843.906268676034
+
+**** Resumen de estadistica para Slovakia ****
+Media: 43292.90666666667
+Mediana: 19269.0
+Desviacion estandar: 68983.09577782008
+
+**** Resumen de estadistica para Algeria ****
+Media: 34924.04761904762
+Mediana: 5334.0
+Desviacion estandar: 152933.62801506848
+
+**** Resumen de estadistica para Taiwan ****
+Media: 40364.71296296296
+Mediana: 17550.0
+Desviacion estandar: 54065.69788122713
+
+**** Resumen de estadistica para Yemen ****
+Media: 16909.166666666668
+Mediana: 6474.0
+Desviacion estandar: 21847.42914318906
+
+**** Resumen de estadistica para Indonesia ****
+Media: 30986.41037735849
+Mediana: 504302.0
+Desviacion estandar: 135543.23538474864
+
+**** Resumen de estadistica para Morocco ****
+Media: 20958.219512195123
+Mediana: 15132.0
+Desviacion estandar: 17049.189358312895
+
+**** Resumen de estadistica para Libyan Arab Jamahiriya ****
+Media: 86265.0
+Mediana: 136464.0
+Desviacion estandar: 89578.33615333565
+
+**** Resumen de estadistica para Belize ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Mali ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Trinidad and Tobago ****
+Media: 50346.77777777778
+Mediana: 22968.0
+Desviacion estandar: 46892.199697225165
+
+**** Resumen de estadistica para Venezuela, Bolivarian Republic of... ****
+Media: 14581.627906976744
+Mediana: 25000.0
+Desviacion estandar: 24218.759813538538
+
+**** Resumen de estadistica para Panama ****
+Media: 54379.318181818184
+Mediana: 23100.0
+Desviacion estandar: 60525.95256612486
+
+**** Resumen de estadistica para Lebanon ****
+Media: 42610.82352941176
+Mediana: 45738.0
+Desviacion estandar: 120998.38835647321
+
+**** Resumen de estadistica para Tunisia ****
+Media: 10130.12962962963
+Mediana: 5664.0
+Desviacion estandar: 14151.931290358572
+
+**** Resumen de estadistica para Kuwait ****
+Media: 153294.0
+Mediana: 58770.0
+Desviacion estandar: 314588.3440434499
+
+**** Resumen de estadistica para Andorra ****
+Media: 160931.0
+Mediana: 160931.0
+Desviacion estandar: 15458.768450300302
+
+**** Resumen de estadistica para Côte d'Ivoire ****
+Media: 11579.076923076924
+Mediana: 10476.0
+Desviacion estandar: 5795.6572601322005
+
+**** Resumen de estadistica para Syrian Arab Republic ****
+Media: 3562.5
+Mediana: 7746.0
+Desviacion estandar: 3514.156147437309
+
+**** Resumen de estadistica para El Salvador ****
+Media: 23627.739130434784
+Mediana: 13500.0
+Desviacion estandar: 23907.522786710913
+
+**** Resumen de estadistica para Cameroon ****
+Media: 24194.91304347826
+Mediana: 12576.0
+Desviacion estandar: 53279.74834512046
+
+**** Resumen de estadistica para Malta ****
+Media: 101300.84090909091
+Mediana: 53277.5
+Desviacion estandar: 181612.5031551419
+
+**** Resumen de estadistica para Turkmenistan ****
+Media: 46449.333333333336
+Mediana: 27348.0
+Desviacion estandar: 47006.86866122155
+
+**** Resumen de estadistica para Brunei Darussalam ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Other Country (Not Listed Above) ****
+Media: 99339.80327868853
+Mediana: 34372.0
+Desviacion estandar: 227563.5476249671
+
+**** Resumen de estadistica para Costa Rica ****
+Media: 40982.64705882353
+Mediana: 60000.0
+Desviacion estandar: 33208.27119729271
+
+**** Resumen de estadistica para Jordan ****
+Media: 59234.705882352944
+Mediana: 69390.0
+Desviacion estandar: 139971.26063990063
+
+**** Resumen de estadistica para Albania ****
+Media: 21833.7
+Mediana: 16228.5
+Desviacion estandar: 31450.766679763103
+
+**** Resumen de estadistica para Uzbekistan ****
+Media: 18304.14285714286
+Mediana: 7476.0
+Desviacion estandar: 23593.33238880831
+
+**** Resumen de estadistica para Sudan ****
+Media: 5195.333333333333
+Mediana: 2100.0
+Desviacion estandar: 7826.205830220012
+
+**** Resumen de estadistica para Kazakhstan ****
+Media: 42133.21052631579
+Mediana: 22056.0
+Desviacion estandar: 159996.24280692617
+
+**** Resumen de estadistica para The former Yugoslav Republic of Macedonia ****
+Media: 40389.45161290323
+Mediana: 6708.0
+Desviacion estandar: 93138.62074737086
+
+**** Resumen de estadistica para Ethiopia ****
+Media: 14217.44
+Mediana: 168360.0
+Desviacion estandar: 34098.8342299264
+
+**** Resumen de estadistica para Paraguay ****
+Media: 39455.19047619047
+Mediana: 22392.0
+Desviacion estandar: 88525.7056332525
+
+**** Resumen de estadistica para Myanmar ****
+Media: 75109.8125
+Mediana: 9516.0
+Desviacion estandar: 248078.14048217918
+
+**** Resumen de estadistica para Somalia ****
+Media: 30999.0
+Mediana: 7800.0
+Desviacion estandar: 48155.80052288613
+
+**** Resumen de estadistica para Guyana ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Honduras ****
+Media: 21239.866666666665
+Mediana: 9312.0
+Desviacion estandar: 19593.607127496114
+
+**** Resumen de estadistica para Qatar ****
+Media: 224692.66666666666
+Mediana: 88980.0
+Desviacion estandar: 380415.7927272035
+
+**** Resumen de estadistica para Jamaica ****
+Media: 24536.090909090908
+Mediana: 12000.0
+Desviacion estandar: 20959.81348416319
+
+**** Resumen de estadistica para Fiji ****
+Media: 30529.5
+Mediana: 30529.5
+Desviacion estandar: 13697.365458364611
+
+**** Resumen de estadistica para Haiti ****
+Media: 8910.0
+Mediana: 8910.0
+Desviacion estandar: 9342.294793036666
+
+**** Resumen de estadistica para Democratic Republic of the Congo ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Benin ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Namibia ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Montenegro ****
+Media: 31267.333333333332
+Mediana: 4128.0
+Desviacion estandar: 23850.958245948947
+
+**** Resumen de estadistica para Rwanda ****
+Media: 19776.0
+Mediana: 6000.0
+Desviacion estandar: 27300.106812977858
+
+**** Resumen de estadistica para Tajikistan ****
+Media: 4902.0
+Mediana: 4902.0
+Desviacion estandar: 3860.8030252785493
+
+**** Resumen de estadistica para Uruguay ****
+Media: 53862.57142857143
+Mediana: 23628.0
+Desviacion estandar: 98945.71991485958
+
+**** Resumen de estadistica para Mauritania ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Bolivia ****
+Media: 17977.36
+Mediana: 3648.0
+Desviacion estandar: 13557.32880179573
+
+**** Resumen de estadistica para Gabon ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Liechtenstein ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para United Republic of Tanzania ****
+Media: 34691.117647058825
+Mediana: 3636.0
+Desviacion estandar: 59080.432333686374
+
+**** Resumen de estadistica para Kyrgyzstan ****
+Media: 16917.0
+Mediana: 8148.0
+Desviacion estandar: 14573.550649908708
+
+**** Resumen de estadistica para Lao People's Democratic Republic ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Madagascar ****
+Media: 5080.0
+Mediana: 8652.0
+Desviacion estandar: 4624.929318378822
+
+**** Resumen de estadistica para Guinea ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Republic of Korea ****
+Media: 204341.11764705883
+Mediana: 40211.0
+Desviacion estandar: 308666.5495093132
+
+**** Resumen de estadistica para Cuba ****
+Media: 10920.555555555555
+Mediana: 50108.0
+Desviacion estandar: 23591.11978296874
+
+**** Resumen de estadistica para Maldives ****
+Media: 15614.0
+Mediana: 11616.0
+Desviacion estandar: 6182.832360658018
+
+**** Resumen de estadistica para Monaco ****
+Media: 33684.0
+Mediana: 33684.0
+Desviacion estandar: 967.322076663197
+
+**** Resumen de estadistica para North Korea ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Senegal ****
+Media: 25797.6
+Mediana: 35118.0
+Desviacion estandar: 16792.988822720035
+
+**** Resumen de estadistica para Angola ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Iceland ****
+Media: 76764.88888888889
+Mediana: 50100.0
+Desviacion estandar: 22913.60448650763
+
+**** Resumen de estadistica para Togo ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Swaziland ****
+Media: 242607.5
+Mediana: 422844.0
+Desviacion estandar: 404386.1859176201
+
+**** Resumen de estadistica para Congo, Republic of the... ****
+Media: 16852.0
+Mediana: 18000.0
+Desviacion estandar: 9132.278576565654
+
+**** Resumen de estadistica para Zambia ****
+Media: 10075.375
+Mediana: 3324.0
+Desviacion estandar: 13200.36643363141
+
+**** Resumen de estadistica para Oman ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Timor-Leste ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Tonga ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Djibouti ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Democratic People's Republic of Korea ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Niger ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Mozambique ****
+Media: 17886.0
+Mediana: 5532.0
+Desviacion estandar: 28421.7502627829
+
+**** Resumen de estadistica para Botswana ****
+Media: 40994.0
+Mediana: 38410.0
+Desviacion estandar: 8032.0351094850175
+
+**** Resumen de estadistica para Dominica ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Papua New Guinea ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Barbados ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Seychelles ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Lesotho ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Bahamas ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Burkina Faso ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Saint Kitts and Nevis ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Malawi ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Liberia ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Bhutan ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Saint Vincent and the Grenadines ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para San Marino ****
+Media: 301788.0
+Mediana: 301788.0
+Desviacion estandar: 389847.76745801687
+
+**** Resumen de estadistica para Sao Tome and Principe ****
+No se cuenta con datos suficientes de este pais para su analisis.
+
+**** Resumen de estadistica para Chad ****
+No se cuenta con datos suficientes de este pais para su analisis.
+

@@ -32,11 +32,16 @@ def five_num_summary(lista):
     print('Desviacion estandar:', std_desv(lista, media))
 
 # Funcion que muestra media, mediana y desviacion estandar
-def centre_summary(lista):
+# Argumento write especial para el caso 4, por la gran cantidad de datos
+def centre_summary(lista, writer=None):
     media = np.mean(lista)
     print('Media:', media)
     print('Mediana:', percentil(lista, 0.5))
     print('Desviacion estandar:', std_desv(lista, media))
+    if writer != None:
+        writer.write('Media: {}\n'.format(media))
+        writer.write('Mediana: {}\n'.format(percentil(lista, 0.5)))
+        writer.write('Desviacion estandar: {}\n\n'.format(std_desv(lista, media)))
 
 # Funcion para conseguir una lista de strings individuales
 # Necesaria para encontrar tipos de desarrolladores, o lenguajes de programacion
@@ -147,6 +152,7 @@ for dvtype in dev_types:
     plt.show()
 '''
 # 4. Compute the median, mean and standard deviation of the annual salary per country.
+# If possible, clean "./data/output_salary_country.txt" before using, or needless lines shall be added
 # Find all possible countries on the column
 '''
 all_countries = []
@@ -161,9 +167,16 @@ for c in all_countries:
         if country[i] == c and not mt.isnan(salary[i]):
             salary_country.append(salary[i])
         i += 1
-    print('**** Resumen de estadistica para {} ****'.format(c))
-    if len(salary_country) > 1: centre_summary(salary_country)
-    else: print('No se cuenta con datos suficientes de este pais para su analisis.')
+    with open(w_d+'output_salary_country.txt', 'a', encoding='utf-8') as writer:
+        print('**** Resumen de estadistica para {} ****'.format(c))
+        writer.write('**** Resumen de estadistica para {} ****\n'.format(c))
+        if len(salary_country) > 1: 
+            centre_summary(salary_country, writer)
+        else: 
+            print('No se cuenta con datos suficientes de este pais para su analisis.')
+            writer.write('No se cuenta con datos suficientes de este pais para su analisis.\n\n')
+
+print('Resultados guardados en  \"./data/output_salary_country.txt\"')
 '''
 # 5. Obtain a bar plot with the frequencies of responses for each developer type.
 # Place all dev types in a list
